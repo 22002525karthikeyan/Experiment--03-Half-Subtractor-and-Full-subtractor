@@ -4,8 +4,11 @@
 To design a half subtractor and full subtractor circuit and verify its truth table in Quartus using Verilog programming.
 
 ## Equipments Required:
-## Hardware – PCs, Cyclone II , USB flasher
-## Software – Quartus prime
+## Hardware – 
+PCs, Cyclone II , USB flasher
+## Software – 
+Quartus prime
+
 ## Theory
 Subtractor circuits take two binary numbers as input and subtract one binary number input from the other binary number input. Similar to adders, it gives out two outputs, difference and borrow (carry-in the case of Adder). There are two types of subtractors.
 
@@ -27,9 +30,9 @@ Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
 ## Procedure
 
+It can be implemented using two half subtractors and one OR gate as: Giving one half subtractor the inputs A and B that gives outputs Diff1 and B1. Giving second half subtractor inputs Bin and Diff1 from first subtractor that gives outputs B2 and D (difference for the full subtractor).
 
 
-Write the detailed procedure here 
 
 
 ## Program:
@@ -76,6 +79,10 @@ endmodule
 ## Timing diagram 
 ![](hs2.png)
 ![](fs2.png)
+
+### Truth Table
+![](HSTT.png)
+![](FSTT.png)
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
